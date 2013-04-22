@@ -741,7 +741,7 @@ static void RADEONSetupCapabilities(ScrnInfoPtr pScrn)
 	if (value & DRM_PRIME_CAP_EXPORT)
 	    pScrn->capabilities |= RR_Capability_SourceOutput | RR_Capability_SinkOffload;
 	if (value & DRM_PRIME_CAP_IMPORT)
-	    pScrn->capabilities |= RR_Capability_SourceOffload;
+	    pScrn->capabilities |= RR_Capability_SourceOffload | RR_Capability_SinkOutput;
     }
 #endif
 }
